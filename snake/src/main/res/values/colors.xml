@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSnakeHead">#311b92</color>
+    <color name="colorSnakeBody">#3F51B5</color>
+    <color name="colorFood">#43a047</color>
+    <color name="colorBackground">#e7fbf2</color>
+    <color name="colorGrid">#1A000000</color>
+    <color name="colorRock">#FF555555</color>
+</resources>

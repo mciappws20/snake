@@ -1,0 +1,2 @@
+include ':app', ':rtloop', ':snake'
+rootProject.name='SnakeOnAPhone'

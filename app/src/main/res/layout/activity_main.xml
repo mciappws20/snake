@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Counter"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/txtCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="nothing"
+                android:textAlignment="textEnd"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <edu.mci.snake.views.SnakeView
+                android:id="@+id/snakeView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:foreground="@drawable/snake" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start" />
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Stop" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:max="50"
+                android:progress="25" />
+
+            <TextView
+                android:id="@+id/txtFreq"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="50 Hz"
+                android:textAlignment="textEnd" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
